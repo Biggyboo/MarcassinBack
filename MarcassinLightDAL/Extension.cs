@@ -64,14 +64,59 @@ namespace MarcassinLightDAL
                 {
                     var bo = new Categorie_BO
                     {
-                        Id_Categorie=cat.id_Categorie,
-                        Id_Categorie_mere=cat.id_Categorie_Mere,
-                        Intitule=cat.Intitule
+                        Id_Categorie = cat.id_Categorie,
+                        Id_Categorie_mere = cat.id_Categorie_Mere,
+                        Intitule = cat.Intitule
                     };
                     listCategorieBO.Add(bo);
                 }
             }
             return listCategorieBO;
+        }
+
+        public static List<Langue_BO> ToListLangueBO(this List<Langue> list)
+        {
+            if (list == null)
+            {
+                return null;
+            }
+            List<Langue_BO> listLangueBO = new List<Langue_BO>();
+            foreach (Langue lan in list)
+            {
+                using (var db = new MarcassinEntities())
+                {
+                    var bo = new Langue_BO
+                    {
+                        Id_Langue = lan.id_Langue,
+                        Intitule = lan.Langue_intitule,
+                        Par_Defaut = lan.Par_Defaut
+                    };
+                    listLangueBO.Add(bo);
+                }
+            }
+            return listLangueBO;
+        }
+
+        public static List<Badge_BO> ToListBadgeBO(this List<Badge> list)
+        {
+            if (list == null)
+            {
+                return null;
+            }
+            List<Badge_BO> listBadgeBO = new List<Badge_BO>();
+            foreach (Badge bad in list)
+            {
+                using (var db = new MarcassinEntities())
+                {
+                    var bo = new Badge_BO
+                    {
+                        Id_Badge = bad.id_Badge,
+                        Intitule = bad.nom
+                    };
+                    listBadgeBO.Add(bo);
+                }
+            }
+            return listBadgeBO;
         }
     }
 }

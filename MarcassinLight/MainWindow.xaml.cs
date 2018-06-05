@@ -24,7 +24,7 @@ namespace MarcassinLight
         {
             InitializeComponent();
             NavigationService nav = Frame.NavigationService;
-            nav.Navigate(new Competences());
+            nav.Navigate(new Pupitre());
         }
     }
 }

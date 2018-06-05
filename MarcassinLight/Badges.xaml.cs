@@ -12,28 +12,33 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using MarcassinLightBLL;
 using MarcassinLightBO;
+using MarcassinLightBLL;
 
 namespace MarcassinLight
 {
     /// <summary>
-    /// Logique d'interaction pour Competences.xaml
+    /// Logique d'interaction pour Badges.xaml
     /// </summary>
-    public partial class Competences : Page
+    public partial class Badges : Page
     {
-        public List<Competence_BO> listCompetences;
-        public Competences()
+        public List<Badge_BO> listBadges;
+        public Badges()
         {
             InitializeComponent();
-            listCompetences = Appel_List.GetCompetences();
-            list.ItemsSource = listCompetences;
+            listBadges = Appel_List.GetBadges();
+            list.ItemsSource = listBadges;
         }
-
 
         private void Creation_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new CreateCompetence());
+            var badg = new Badge_BO
+            {
+                Intitule = C1.Text
+            };
+            Create.CreateBadge(badg);
+            listBadges = Appel_List.GetBadges();
+            list.ItemsSource = listBadges;
         }
     }
 }

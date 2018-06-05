@@ -18,21 +18,21 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="10*"/>
-            <RowDefinition Height="25*"/>
-            <RowDefinition Height="25*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
             <RowDefinition Height="25*"/>
             <RowDefinition Height="10*"/>
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
-        <Label HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="1" FontSize="30" Foreground="#FCA324"  Height="48" Width="300" >Ajout de Compétence</Label>
+        <Label HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="1" FontSize="30" Foreground="#FF1F7C31"  Height="48" Width="300" >Ajout de Compétence</Label>
 
-        <Label Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Intitulé" FontSize="18" Foreground="#FCA324" Height="34"/>
-        <TextBox Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" Name="C1" Height="35" HorizontalAlignment="Center" Width="750"/>
+        <Label Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Intitulé" FontSize="18" Foreground="#FF1F7C31" Height="34"/>
+        <TextBox Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" Name="C1" Height="35" Width="750"/>
 
-        <Label Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Catégorie" FontSize="18" Foreground="#FCA324" Height="34"/>
+        <Label Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Catégorie" FontSize="18" Foreground="#FF1F7C31" Height="34"/>
         <ComboBox Grid.Row="3" Grid.Column="2" VerticalAlignment="Center" Name="C2" Height="35" ItemsSource="{Binding Intitule}"/>
 
-        <Button VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2" Width="100" Grid.Column="1" Grid.Row="4" x:Name="Creation" Click="Creation_Click" Content="Creation" Height="36" FontSize="18" Background="#FCA324" BorderBrush="#ecf0f1" Foreground="White" Style="{StaticResource MyButton}"/>
+        <Button VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2" Width="100" Grid.Column="1" Grid.Row="4" x:Name="Creation" Click="Creation_Click" Content="Creation" Height="36" FontSize="18" Background="#FF1F7C31" BorderBrush="#ecf0f1" Foreground="White" Style="{StaticResource MyButton}"/>
 
     </Grid>
 </Page>

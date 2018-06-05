@@ -19,7 +19,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="0.25*"/>
         </Grid.RowDefinitions>
-        <Label Grid.Column="1" Grid.Row="0" Content="Liste des compétences" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="#FCA324"/>
+        <Label Grid.Column="1" Grid.Row="0" Content="Liste des compétences" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="#FF1F7C31"/>
         <StackPanel Grid.Column="1"  Grid.Row="1">
             <ListView x:Name="list" Width="800" Height="450" HorizontalAlignment="Center">
                 <ListView.View>
@@ -35,6 +35,6 @@
                 </ListView.View>
             </ListView>
         </StackPanel>
-        <Button x:Name="Creation" Content="Ajouter" Click="Creation_Click" Grid.Column="1" Grid.Row="2" Height="35" Width="100" FontSize="18" Background="#FCA324" BorderBrush="#ecf0f1" Foreground="White" Style="{StaticResource MyButton}"/>
+        <Button x:Name="Creation" Content="Ajouter" Click="Creation_Click" Grid.Column="1" Grid.Row="2" Height="35" Width="100" FontSize="18" Background="#FF1F7C31" BorderBrush="#ecf0f1" Foreground="White" Style="{StaticResource MyButton}"/>
     </Grid>
 </Page>
