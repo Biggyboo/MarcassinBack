@@ -18,22 +18,27 @@ using MarcassinLightBO;
 namespace MarcassinLight
 {
     /// <summary>
-    /// Logique d'interaction pour Competences.xaml
+    /// Logique d'interaction pour Langues.xaml
     /// </summary>
-    public partial class Competences : Page
+    public partial class Langues : Page
     {
-        public List<Competence_BO> listCompetences;
-        public Competences()
+        public List<Langue_BO> listLangues;
+        public Langues()
         {
             InitializeComponent();
-            listCompetences = Appel_List.GetCompetences();
-            list.ItemsSource = listCompetences;
+            listLangues = Appel_List.GetLangues();
+            list.ItemsSource = listLangues;
         }
-
 
         private void Creation_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new CreateCompetence());
+            var lang = new Langue_BO
+            {
+                Intitule = C1.Text
+            };
+            Create.CreateLangue(lang);
+            listLangues = Appel_List.GetLangues();
+            list.ItemsSource = listLangues;
         }
     }
 }

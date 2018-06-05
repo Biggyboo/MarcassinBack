@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace MarcassinLightBO
 {
-    public class Class1
+    public class Badge_BO
     {
+        public int Id_Badge { get; set; }
+        public string Intitule { get; set; }
     }
 }

@@ -30,7 +30,7 @@ namespace MarcassinLightDAL
                 var cat = from ca in db.Categorie
                            where ca.Intitule == compBO.Categorie
                            select ca.id_Categorie;
-                var comp = new Competence
+                Competence comp = new Competence
                 {
                     id_categorie = cat.FirstOrDefault(),
                     est_actif = true

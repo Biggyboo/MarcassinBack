@@ -14,5 +14,14 @@ namespace MarcassinLightBLL
         {
             Competence_DAL.AddCompetence(compBO);
         }
+
+        public static void CreateLangue(Langue_BO langBO)
+        {
+            Langue_DAL.AddLangue(langBO);
+        }
+        public static void CreateBadge(Badge_BO badgBO)
+        {
+            Badge_Dal.AddBadge(badgBO);
+        }
     }
 }

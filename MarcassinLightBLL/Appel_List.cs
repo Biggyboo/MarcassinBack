@@ -20,9 +20,25 @@ namespace MarcassinLightBLL
 
         public static List<Categorie_BO> GetCategories()
         {
-            List<Categorie_BO> listCompBO = Categorie_DAL.GetCategorie();
+            List<Categorie_BO> listCatBO = Categorie_DAL.GetCategorie();
 
-            return listCompBO;
+            return listCatBO;
+
+        }
+
+        public static List<Langue_BO> GetLangues()
+        {
+            List<Langue_BO> listLangBO = Langue_DAL.GetLangue();
+
+            return listLangBO;
+
+        }
+
+        public static List<Badge_BO> GetBadges()
+        {
+            List<Badge_BO> listBadgBO = Badge_Dal.GetBadge();
+
+            return listBadgBO;
 
         }
     }
