@@ -77,10 +77,18 @@
       <DependentUpon>UpdateCompetence.xaml</DependentUpon>
     </Compile>
     <Page Include="Badges.xaml">
+    <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Categories.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Competences.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CreateCategorie.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -104,8 +112,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Categories.xaml.cs">
+      <DependentUpon>Categories.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Competences.xaml.cs">
       <DependentUpon>Competences.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CreateCategorie.xaml.cs">
+      <DependentUpon>CreateCategorie.xaml</DependentUpon>
     </Compile>
     <Compile Include="CreateCompetence.xaml.cs">
       <DependentUpon>CreateCompetence.xaml</DependentUpon>
@@ -114,14 +128,20 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+<<<<<<< HEAD
     <Page Include="Pupitre.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+<<<<<<< HEAD
     <Page Include="UpdateCompetence.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+=======
+=======
+>>>>>>> Added categorie page
+>>>>>>> Added categorie page
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

@@ -24,7 +24,11 @@ namespace MarcassinLight
         {
             InitializeComponent();
             NavigationService nav = Frame.NavigationService;
+<<<<<<< HEAD
             nav.Navigate(new Pupitre());
+=======
+            nav.Navigate(new Categories());
+>>>>>>> Added categorie page
         }
     }
 }
