@@ -16,5 +16,9 @@ namespace MarcassinLightBO
         public string Competence_mere { get; set; }
         public bool Est_active { get; set; }
 
+        public override string ToString()
+        {
+            return this.Competence;
+        }
     }
 }

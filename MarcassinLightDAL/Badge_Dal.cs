@@ -27,8 +27,7 @@ namespace MarcassinLightDAL
                 {
                     nom=badgBO.Intitule
                 });
-
-
+                
                 db.SaveChanges();
             }
 
