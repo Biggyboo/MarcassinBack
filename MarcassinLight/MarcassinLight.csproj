@@ -75,6 +75,8 @@
     </Compile>
     <Compile Include="Badge_trad_list.xaml.cs">
       <DependentUpon>Badge_trad_list.xaml</DependentUpon>
+    <Compile Include="CompetencesActives.xaml.cs">
+      <DependentUpon>CompetencesActives.xaml</DependentUpon>
     </Compile>
     <Compile Include="Langues.xaml.cs">
       <DependentUpon>Langues.xaml</DependentUpon>
@@ -119,6 +121,7 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CreateCategorie.xaml">
+    <Page Include="CompetencesActives.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

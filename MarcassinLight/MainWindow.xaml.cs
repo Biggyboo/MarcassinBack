@@ -26,5 +26,14 @@ namespace MarcassinLight
             NavigationService nav = Frame.NavigationService;
             nav.Navigate(new Pupitre());
         }
+
+        private void Pupitre_click(object sender, RoutedEventArgs e)
+        {
+            NavigationService nav = Frame.NavigationService;
+            nav.Navigate(new Pupitre());
+        }
+
+
+
     }
 }
