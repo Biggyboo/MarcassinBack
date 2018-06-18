@@ -22,10 +22,13 @@ namespace MarcassinLightBLL
         {
             Badge_Dal.AddBadge(badgBO);
         }
-
         public static void CreateCategorie(Categorie_BO catBO)
         {
             Categorie_DAL.AddCategorie(catBO);
+        }
+        public static void CreateLangueCategorie(LangueCategorie_BO langCatBO)
+        {
+            LangueCategorie_DAL.AddLangueCategories(langCatBO);
         }
     }
 }

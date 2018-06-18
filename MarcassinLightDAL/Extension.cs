@@ -62,10 +62,10 @@ namespace MarcassinLightDAL
             {
                 using (var db = new MarcassinEntities())
                 {
-                    var cate= from c in db.Categorie
+                    var cate = from c in db.Categorie
                                where c.id_Categorie == cat.id_Categorie_Mere
                                select c.Intitule;
-                    
+
                     var catme = "Aucune";
                     if (cate != null)
                     {
@@ -77,7 +77,7 @@ namespace MarcassinLightDAL
                         Id_Categorie = cat.id_Categorie,
                         Id_Categorie_mere = cat.id_Categorie_Mere,
                         Categorie_mere = catme,
-                        Intitule=cat.Intitule
+                        Intitule = cat.Intitule
                     };
                     listCategorieBO.Add(bo);
                 }
@@ -128,6 +128,26 @@ namespace MarcassinLightDAL
                 }
             }
             return listBadgeBO;
+        }
+        public static List<LangueCategorie_BO> ToListLangueCategorieBO(this List<Categorie_Langue> list)
+        {
+            if (list == null)
+            {
+                return null;
+            }
+            List<LangueCategorie_BO> listCategorieBO = new List<LangueCategorie_BO>();
+            foreach (Categorie_Langue CatLan in list)
+            {
+                var bo = new LangueCategorie_BO
+                {
+                    Id_Categorie = CatLan.Id_Categorie,
+                    Id_Langue = CatLan.id_Langue,
+                    Traduction = CatLan.Traduction
+                };
+                listCategorieBO.Add(bo);
+
+            }
+            return listCategorieBO;
         }
     }
 }

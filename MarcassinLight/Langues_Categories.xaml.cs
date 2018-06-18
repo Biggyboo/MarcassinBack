@@ -12,35 +12,30 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using MarcassinLightBLL;
 using MarcassinLightBO;
+using MarcassinLightBLL;
 
 namespace MarcassinLight
 {
     /// <summary>
-    /// Interaction logic for CreateCategorie.xaml
+    /// Interaction logic for Langues_Categories.xaml
     /// </summary>
-    public partial class CreateCategorie : Page
+    public partial class Langues_Categories : Page
     {
         public List<Categorie_BO> listCategories;
-        public CreateCategorie()
+        public Langues_Categories()
         {
             InitializeComponent();
             listCategories = Appel_List.GetCategories();
-            C2.ItemsSource = listCategories;
-
+            list.ItemsSource = listCategories;
         }
-
         private void Creation_Click(object sender, RoutedEventArgs e)
         {
-            var cat = new Categorie_BO
-            {
-                Categorie_mere = C2.Text,
-                Intitule = C1.Text,
-            };
-            Create.CreateCategorie(cat);
+            NavigationService.Navigate(new Create_Langues_Categories());
+        }
 
-            this.NavigationService.Navigate(new Uri("Categories.xaml", UriKind.Relative));
+        private void list_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
 
         }
     }
