@@ -25,8 +25,7 @@
             <ListView x:Name="list" Width="502" Height="450" HorizontalAlignment="Center">
                 <ListView.View>
 
-                    <GridView AllowsColumnReorder="true"
-                     ColumnHeaderToolTip="Competence Information">
+                    <GridView AllowsColumnReorder="true">
                         <GridViewColumn Header="IdLangue" DisplayMemberBinding="{Binding Id_Langue}" Width="100"/>
                         <GridViewColumn Header="Intitulé" DisplayMemberBinding="{Binding Intitule}" Width="300"/>
                         <GridViewColumn Header="Par Défaut" DisplayMemberBinding="{Binding Par_Defaut}" Width="100"/>

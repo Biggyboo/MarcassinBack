@@ -21,11 +21,11 @@
         </Grid.RowDefinitions>
         <Label Grid.Column="1" Grid.Row="0" Content="Liste des compétences" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="#FF1F7C31"/>
         <StackPanel Grid.Column="1"  Grid.Row="1">
-            <ListView x:Name="list" Width="800" Height="450" HorizontalAlignment="Center">
+            <ListView MouseDoubleClick="list_MouseDoubleClick" SelectedItem="{Binding Select}" x:Name="list" Width="800" Height="450" HorizontalAlignment="Center">
                 <ListView.View>
 
                     <GridView AllowsColumnReorder="true"
-                     ColumnHeaderToolTip="Competence Information">
+                     ColumnHeaderToolTip="Information">
                         <GridViewColumn Header="Compétence" DisplayMemberBinding="{Binding Competence}" Width="250"/>
                         <GridViewColumn Header="Categorie" DisplayMemberBinding="{Binding Categorie}" Width="250"/>
                         <GridViewColumn Header="Compétence mère" DisplayMemberBinding="{Binding Competence_mere}" Width="200"/>
