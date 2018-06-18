@@ -64,6 +64,9 @@
     <Compile Include="Badges.xaml.cs">
       <DependentUpon>Badges.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CompetencesActives.xaml.cs">
+      <DependentUpon>CompetencesActives.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Langues.xaml.cs">
       <DependentUpon>Langues.xaml</DependentUpon>
     </Compile>
@@ -81,6 +84,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Competences.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CompetencesActives.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

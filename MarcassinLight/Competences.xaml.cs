@@ -26,20 +26,13 @@ namespace MarcassinLight
         public Competences()
         {
             InitializeComponent();
-            listCompetences = Appel_List.GetCompetences();
+            listCompetences = Appel_List.GetCompetencesArchives();
             list.ItemsSource = listCompetences;
         }
 
-
-        private void Creation_Click(object sender, RoutedEventArgs e)
+        private void Retour_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new CreateCompetence());
-        }
-
-        private void list_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-                NavigationService.Navigate((new UpdateCompetence(((Competence_BO)list.SelectedItem))));
-
+            NavigationService.Navigate(new CompetencesActives());
         }
     }
 }

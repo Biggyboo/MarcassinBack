@@ -52,7 +52,7 @@ namespace MarcassinLight
 
         private void Compétences_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Uri("Competences.xaml", UriKind.Relative));
+            this.NavigationService.Navigate(new Uri("CompetencesActives.xaml", UriKind.Relative));
         }
 
         private void Catégories_Click(object sender, RoutedEventArgs e)

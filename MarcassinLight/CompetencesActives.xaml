@@ -1,4 +1,4 @@
-﻿<Page x:Class="MarcassinLight.Competences"
+﻿<Page x:Class="MarcassinLight.CompetencesActives"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:MarcassinLight"
       mc:Ignorable="d" 
       d:DesignHeight="700" d:DesignWidth="1200"
-      Title="Competences">
+      Title="CompetencesActives">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -17,24 +17,26 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="0.25*"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="0.25*"/>
+            <RowDefinition Height="0.15*"/>
+            <RowDefinition Height="0.15*"/>
         </Grid.RowDefinitions>
-        <Label Grid.Column="1" Grid.Row="0" Content="Liste des compétences archivées" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="#FF1F7C31"/>
+        <Label Grid.Column="1" Grid.Row="0" Content="Liste des compétences actives" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="#FF1F7C31"/>
         <StackPanel Grid.Column="1"  Grid.Row="1">
-            <ListView SelectedItem="{Binding Select}" x:Name="list" Width="800" Height="450" HorizontalAlignment="Center">
+            <ListView MouseDoubleClick="list_MouseDoubleClick" SelectedItem="{Binding Select}" x:Name="list" Width="500" Height="450" HorizontalAlignment="Center">
                 <ListView.View>
 
                     <GridView AllowsColumnReorder="true"
                      ColumnHeaderToolTip="Information">
                         <GridViewColumn Header="Compétence" DisplayMemberBinding="{Binding Competence}" Width="250"/>
                         <GridViewColumn Header="Categorie" DisplayMemberBinding="{Binding Categorie}" Width="250"/>
-                        <GridViewColumn Header="Compétence mère" DisplayMemberBinding="{Binding Competence_mere}" Width="200"/>
-                        <GridViewColumn Header="Active" DisplayMemberBinding="{Binding Est_active}" Width="100"/>
+
 
                     </GridView>
                 </ListView.View>
             </ListView>
         </StackPanel>
-        <Button x:Name="Retour" Content="Retour" Click="Retour_Click" Grid.Column="1" Grid.Row="2" Height="35" Width="100" FontSize="18" Background="#FF1F7C31" BorderBrush="#ecf0f1" Foreground="White" Style="{StaticResource MyButton}"/>
+        <Button x:Name="Ajout" Content="Ajouter" Click="Ajout_Click" Grid.Column="1" Grid.Row="2" Height="35" Width="100" FontSize="18" Background="#FF1F7C31" BorderBrush="#ecf0f1" Foreground="White" Style="{StaticResource MyButton}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button x:Name="Archive" Content="Voir les compétences archivées" Click="Archive_Click" Grid.Column="1" Grid.Row="3" Height="35" FontSize="18" Background="#FF1F7C31" BorderBrush="#ecf0f1" Foreground="White" Style="{StaticResource MyButton}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Margin="0"/>
+
     </Grid>
 </Page>
