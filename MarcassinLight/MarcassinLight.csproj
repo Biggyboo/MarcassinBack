@@ -78,6 +78,9 @@
     </Compile>
     <Compile Include="CompetencesActives.xaml.cs">
       <DependentUpon>CompetencesActives.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CompetencesActives.xaml.cs">
+      <DependentUpon>CompetencesActives.xaml</DependentUpon>
 
     </Compile>
     <Compile Include="Langues.xaml.cs">
@@ -124,6 +127,10 @@
     </Page>
 
     <Page Include="CreateCategorie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CompetencesActives.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

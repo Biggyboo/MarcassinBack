@@ -72,7 +72,7 @@ namespace MarcassinLightBLL
             return listBadgBO;
 
         }
-<<<<<<< HEAD
+
         public static List<LangueCategorie_BO> GetLanguesCategoriesByIdCat(Categorie_BO categorie)
         {
             List<LangueCategorie_BO> listLangCat = LangueCategorie_DAL.GetLangueCategoriesByIdCategorie(categorie);
@@ -84,8 +84,6 @@ namespace MarcassinLightBLL
             List<Langue_Badge_BO> listLangBadBO = Langue_Badge_DAL.GetTraductionByBadge(bad);
             return listLangBadBO;
         }
-=======
 
->>>>>>> ajout du bouton pupitre, modif comp mere
     }
 }
