@@ -22,14 +22,14 @@ namespace MarcassinLightDAL
 
         public static void AddCompetence(Competence_BO compBO)
         {
-            
-            
+
+
 
             using (var db = new MarcassinEntities())
             {
                 var cat = from ca in db.Categorie
-                           where ca.Intitule == compBO.Categorie
-                           select ca.id_Categorie;
+                          where ca.Intitule == compBO.Categorie
+                          select ca.id_Categorie;
                 Competence comp = new Competence
                 {
                     id_categorie = cat.FirstOrDefault(),
@@ -47,6 +47,39 @@ namespace MarcassinLightDAL
 
             }
 
+        }
+
+        public static void UpdCompetence(Competence_BO compBO)
+        {
+
+
+            using (var db = new MarcassinEntities())
+            {
+
+                Competence comp = db.Competence.Find(compBO.Id_Competence);
+
+                var cat = from ca in db.Categorie
+                          where ca.Intitule == compBO.Categorie
+                          select ca.id_Categorie;
+                comp.id_categorie = cat.FirstOrDefault();
+                db.SaveChanges();
+
+                //if (compBO.Competence_mere != null)
+                //{
+                //    var comref = from lc in db.Langue_Competence
+                //                 where lc.Traduction == compBO.Competence_mere
+                //                 select lc.id_Competence;
+
+                //    comp.id_Competence_ref = comref.FirstOrDefault();
+                //    comp.est_actif = false;
+                //}
+                //db.SaveChanges();
+
+                Langue_Competence langcomp = db.Langue_Competence.Where(l=>l.id_Competence==compBO.Id_Competence).Where(l=>l.id_Langue==1).FirstOrDefault();
+                langcomp.Traduction = compBO.Competence;
+                db.SaveChanges();
+
+            }
         }
     }
 }
