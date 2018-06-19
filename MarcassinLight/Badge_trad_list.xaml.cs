@@ -28,6 +28,7 @@ namespace MarcassinLight
             InitializeComponent();
             ListLanguesBadges = Appel_List.GetTraductionBadge(badBO);
             list.ItemsSource = ListLanguesBadges;
+            BadgeName.Content = badBO.Intitule;
            
         }
     }

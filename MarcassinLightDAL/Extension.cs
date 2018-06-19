@@ -129,7 +129,6 @@ namespace MarcassinLightDAL
             }
             return listBadgeBO;
         }
-<<<<<<< HEAD
         public static List<LangueCategorie_BO> ToListLangueCategorieBO(this List<Categorie_Langue> list)
         {
             if (list == null)
@@ -152,12 +151,7 @@ namespace MarcassinLightDAL
         }
 
         public static List<Langue_Badge_BO> ToListLangueBadgeBO(this List<Langue_Badge> list)
-            {
-=======
-
-        public static List<Langue_Badge_BO> ToListLangueBadgeBO(this List<Langue_Badge> list)
         {
->>>>>>> e49c9eaada70bc43f15e4eb00ece31494f4b8a65
             if (list == null)
             {
                 return null;
