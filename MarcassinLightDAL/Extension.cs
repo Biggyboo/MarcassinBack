@@ -129,12 +129,18 @@ namespace MarcassinLightDAL
             }
             return listBadgeBO;
         }
+<<<<<<< HEAD
         public static List<LangueCategorie_BO> ToListLangueCategorieBO(this List<Categorie_Langue> list)
+=======
+
+        public static List<Langue_Badge_BO> ToListLangueBadgeBO(this List<Langue_Badge> list)
+>>>>>>> Ajout de la traduction des badges
         {
             if (list == null)
             {
                 return null;
             }
+<<<<<<< HEAD
             List<LangueCategorie_BO> listCategorieBO = new List<LangueCategorie_BO>();
             foreach (Categorie_Langue CatLan in list)
             {
@@ -148,6 +154,22 @@ namespace MarcassinLightDAL
 
             }
             return listCategorieBO;
+=======
+            List<Langue_Badge_BO> listLangueBadgeBO = new List<Langue_Badge_BO>();
+            foreach (Langue_Badge lanbad in list)
+            {
+                using (var db = new MarcassinEntities())
+                {
+                    var bo = new Langue_Badge_BO
+                    {
+                        Traduction = lanbad.Traduction,
+                        Langue = lanbad.Langue.Langue_intitule
+                    };
+                    listLangueBadgeBO.Add(bo);
+                }
+            }
+            return listLangueBadgeBO;
+>>>>>>> Ajout de la traduction des badges
         }
     }
 }

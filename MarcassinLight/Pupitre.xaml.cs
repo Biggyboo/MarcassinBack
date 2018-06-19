@@ -37,7 +37,7 @@ namespace MarcassinLight
 
         private void Badges_trad_Click(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.Navigate(new Uri("Badge_trad.xaml", UriKind.Relative));
         }
 
         private void Compétences_trad_Click(object sender, RoutedEventArgs e)
