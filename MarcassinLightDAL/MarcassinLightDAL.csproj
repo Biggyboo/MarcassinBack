@@ -74,6 +74,7 @@
     <Compile Include="Langue_Badge.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Langue_Badge_DAL.cs" />
     <Compile Include="Langue_Competence.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
