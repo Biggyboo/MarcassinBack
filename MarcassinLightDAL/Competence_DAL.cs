@@ -22,9 +22,6 @@ namespace MarcassinLightDAL
 
         public static void AddCompetence(Competence_BO compBO)
         {
-
-
-
             using (var db = new MarcassinEntities())
             {
                 var cat = from ca in db.Categorie

@@ -64,8 +64,17 @@
     <Compile Include="Badges.xaml.cs">
       <DependentUpon>Badges.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Categories_Trad_List.xaml.cs">
+      <DependentUpon>Categories_Trad_List.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Create_Langues_Categories.xaml.cs">
+      <DependentUpon>Create_Langues_Categories.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Langues.xaml.cs">
       <DependentUpon>Langues.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Langues_Categories.xaml.cs">
+      <DependentUpon>Langues_Categories.xaml</DependentUpon>
     </Compile>
     <Compile Include="Langues_Competences.xaml.cs">
       <DependentUpon>Langues_Competences.xaml</DependentUpon>
@@ -76,7 +85,18 @@
     <Compile Include="UpdateCompetence.xaml.cs">
       <DependentUpon>UpdateCompetence.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Update_Categories_Trad.xaml.cs">
+      <DependentUpon>Update_Categories_Trad.xaml</DependentUpon>
+    </Compile>
     <Page Include="Badges.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Categories.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Categories_Trad_List.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -84,11 +104,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CreateCategorie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CreateCompetence.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Create_Langues_Categories.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Langues.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Langues_Categories.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -104,8 +136,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Categories.xaml.cs">
+      <DependentUpon>Categories.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Competences.xaml.cs">
       <DependentUpon>Competences.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CreateCategorie.xaml.cs">
+      <DependentUpon>CreateCategorie.xaml</DependentUpon>
     </Compile>
     <Compile Include="CreateCompetence.xaml.cs">
       <DependentUpon>CreateCompetence.xaml</DependentUpon>
@@ -119,6 +157,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UpdateCompetence.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Update_Categories_Trad.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -11,6 +11,9 @@ namespace MarcassinLightBO
         public int Id_Langue { get; set; }
         public string Intitule { get; set; }
         public bool Par_Defaut { get; set; }
-
+        public override string ToString()
+        {
+            return this.Intitule;
+        }
     }
 }

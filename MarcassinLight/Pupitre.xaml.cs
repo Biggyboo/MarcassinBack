@@ -47,7 +47,7 @@ namespace MarcassinLight
 
         private void Categories_trad_Click(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.Navigate(new Uri("Langues_Categories.xaml", UriKind.Relative));
         }
 
         private void Compétences_Click(object sender, RoutedEventArgs e)
@@ -57,7 +57,7 @@ namespace MarcassinLight
 
         private void Catégories_Click(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.Navigate(new Uri("Categories.xaml", UriKind.Relative));
         }
     }
 }

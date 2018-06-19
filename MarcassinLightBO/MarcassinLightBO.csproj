@@ -43,6 +43,7 @@
     <Compile Include="Badge_BO.cs" />
     <Compile Include="Categorie_BO.cs" />
     <Compile Include="Competence_BO.cs" />
+    <Compile Include="LangueCategorie_BO.cs" />
     <Compile Include="Langue_BO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
