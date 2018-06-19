@@ -34,6 +34,12 @@ namespace MarcassinLight
             NavigationService.Navigate(new Create_Langues_Categories());
         }
 
+        private void list_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            
+            NavigationService.Navigate(new Categories_Trad_List(((Categorie_BO)list.SelectedItem)));
+        }
+
         private void list_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 

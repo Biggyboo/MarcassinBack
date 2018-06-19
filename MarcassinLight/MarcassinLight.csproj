@@ -64,6 +64,9 @@
     <Compile Include="Badges.xaml.cs">
       <DependentUpon>Badges.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Categories_Trad_List.xaml.cs">
+      <DependentUpon>Categories_Trad_List.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Create_Langues_Categories.xaml.cs">
       <DependentUpon>Create_Langues_Categories.xaml</DependentUpon>
     </Compile>
@@ -82,11 +85,18 @@
     <Compile Include="UpdateCompetence.xaml.cs">
       <DependentUpon>UpdateCompetence.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Update_Categories_Trad.xaml.cs">
+      <DependentUpon>Update_Categories_Trad.xaml</DependentUpon>
+    </Compile>
     <Page Include="Badges.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Categories.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Categories_Trad_List.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -147,6 +157,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UpdateCompetence.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Update_Categories_Trad.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
