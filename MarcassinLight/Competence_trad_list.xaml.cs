@@ -34,15 +34,7 @@ namespace MarcassinLight
             Intitule.Content = compBO.Competence;
             compeBO = compBO;
         }
-
-        private void list1_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            if (listtrad[list1.SelectedValue.ToString()] != null)
-            {
-                trad.Text = listtrad[list1.SelectedValue.ToString()];
-            }
-        }
-
+        
         private void Update_Click(object sender, RoutedEventArgs e)
         {
             if (trad.Text != null || trad.Text != "" ||list1.SelectedValue!=null)
@@ -62,6 +54,14 @@ namespace MarcassinLight
         private void Ajouter_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Competence_trad_ajout(compeBO));
+        }
+
+        private void list1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (listtrad[list1.SelectedValue.ToString()] != null)
+            {
+                trad.Text = listtrad[list1.SelectedValue.ToString()];
+            }
         }
     }
 }
