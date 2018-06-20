@@ -30,5 +30,10 @@ namespace MarcassinLightBLL
         {
             LangueCategorie_DAL.AddLangueCategories(langCatBO);
         }
+        public static void CreateLangueCompetence(int id_comp, string langue, string trad)
+        {
+            LangueCompetence_DAL.AddTrad(id_comp,langue,trad);
+        }
+
     }
 }

@@ -67,9 +67,12 @@
     <Compile Include="Categories_Trad_List.xaml.cs">
       <DependentUpon>Categories_Trad_List.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Competence_trad_ajout.xaml.cs">
+      <DependentUpon>Competence_trad_ajout.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Create_Langues_Categories.xaml.cs">
       <DependentUpon>Create_Langues_Categories.xaml</DependentUpon>
-	</Compile>  
+    </Compile>
     <Compile Include="Badge_trad.xaml.cs">
       <DependentUpon>Badge_trad.xaml</DependentUpon>
     </Compile>
@@ -116,7 +119,7 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Categories_Trad_List.xaml">
-	  <SubType>Designer</SubType>
+      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Badge_trad.xaml">
@@ -131,7 +134,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-
+    <Page Include="Competence_trad_ajout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CreateCategorie.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

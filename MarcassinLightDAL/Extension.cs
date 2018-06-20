@@ -129,7 +129,6 @@ namespace MarcassinLightDAL
             }
             return listBadgeBO;
         }
-<<<<<<< HEAD
         public static List<LangueCategorie_BO> ToListLangueCategorieBO(this List<Categorie_Langue> list)
         {
             if (list == null)
@@ -172,10 +171,6 @@ namespace MarcassinLightDAL
             }
             return listLangueBadgeBO;
         }
-=======
-
-
->>>>>>> ajout trad compétences
     }
 }
 
