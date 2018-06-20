@@ -46,5 +46,11 @@ namespace MarcassinLightBLL
             List<LangueCategorie_BO> listLangCat = LangueCategorie_DAL.GetLangueCategoriesByIdCategorie(categorie);
             return listLangCat;
         }
+
+        public static List<Langue_Badge_BO> GetTraductionBadge(Badge_BO bad)
+        {
+            List<Langue_Badge_BO> listLangBadBO = Langue_Badge_DAL.GetTraductionByBadge(bad);
+            return listLangBadBO;
+        }
     }
 }

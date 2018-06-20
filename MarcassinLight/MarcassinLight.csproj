@@ -69,6 +69,12 @@
     </Compile>
     <Compile Include="Create_Langues_Categories.xaml.cs">
       <DependentUpon>Create_Langues_Categories.xaml</DependentUpon>
+	</Compile>  
+    <Compile Include="Badge_trad.xaml.cs">
+      <DependentUpon>Badge_trad.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Badge_trad_list.xaml.cs">
+      <DependentUpon>Badge_trad_list.xaml</DependentUpon>
     </Compile>
     <Compile Include="Langues.xaml.cs">
       <DependentUpon>Langues.xaml</DependentUpon>
@@ -97,6 +103,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Categories_Trad_List.xaml">
+	  <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Badge_trad.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Badge_trad_list.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

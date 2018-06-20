@@ -149,6 +149,28 @@ namespace MarcassinLightDAL
             }
             return listCategorieBO;
         }
+
+        public static List<Langue_Badge_BO> ToListLangueBadgeBO(this List<Langue_Badge> list)
+        {
+            if (list == null)
+            {
+                return null;
+            }
+            List<Langue_Badge_BO> listLangueBadgeBO = new List<Langue_Badge_BO>();
+            foreach (Langue_Badge lanbad in list)
+            {
+                using (var db = new MarcassinEntities())
+                {
+                    var bo = new Langue_Badge_BO
+                    {
+                        Traduction = lanbad.Traduction,
+                        Langue = lanbad.Langue.Langue_intitule
+                    };
+                    listLangueBadgeBO.Add(bo);
+                }
+            }
+            return listLangueBadgeBO;
+        }
     }
 }
 
