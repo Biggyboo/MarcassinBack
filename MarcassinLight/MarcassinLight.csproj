@@ -83,6 +83,12 @@
       <DependentUpon>CompetencesActives.xaml</DependentUpon>
 
     </Compile>
+    <Compile Include="Competence_trad.xaml.cs">
+      <DependentUpon>Competence_trad.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Competence_trad_list.xaml.cs">
+      <DependentUpon>Competence_trad_list.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Langues.xaml.cs">
       <DependentUpon>Langues.xaml</DependentUpon>
     </Compile>
@@ -135,6 +141,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CompetencesActives.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Competence_trad.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Competence_trad_list.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
