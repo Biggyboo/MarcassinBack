@@ -52,7 +52,7 @@
     <Compile Include="Badge.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Badge_Dal.cs" />
+    <Compile Include="Badge_DAL.cs" />
     <Compile Include="Categorie.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>

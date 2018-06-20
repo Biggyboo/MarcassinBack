@@ -31,5 +31,9 @@ namespace MarcassinLight
             BadgeName.Content = badBO.Intitule;
            
         }
+        private void list_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate((new Update_Badge_Trad(((Langue_Badge_BO)list.SelectedItem))));
+        }
     }
 }

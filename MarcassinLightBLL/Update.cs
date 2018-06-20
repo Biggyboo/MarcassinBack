@@ -28,5 +28,13 @@ namespace MarcassinLightBLL
         {
             Categorie_DAL.UpdCategorie(cat);
         }
+        public static void UpdateBadge(Badge_BO badBO)
+        {
+            Badge_DAL.UpdBadge(badBO);
+        }
+        public static void UpdateBadgeTrad(Langue_Badge_BO lanBad)
+        {
+            Langue_Badge_DAL.UpdLangueBadge(lanBad);
+        }
     }
 }

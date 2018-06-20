@@ -23,7 +23,7 @@
         <Label Grid.Column="1" Grid.Row="0" Content="Liste des traduction de : " HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="#FF1F7C31"/>
         <Label Grid.Row="0" x:Name="BadgeName" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="#FF1F7C31" Grid.ColumnSpan="2" Margin="514,27,204,29" Width="349" Height="60" Grid.Column="1"/>
         <StackPanel Grid.Column="1"  Grid.Row="1" Grid.ColumnSpan="2">
-            <ListView x:Name="list" Width="502" Height="450" HorizontalAlignment="Center">
+            <ListView x:Name="list" MouseDoubleClick="list_MouseDoubleClick" Width="502" Height="450" HorizontalAlignment="Center">
                 <ListView.View>
 
                     <GridView AllowsColumnReorder="true"

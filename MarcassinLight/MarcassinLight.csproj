@@ -124,6 +124,12 @@
     <Compile Include="UpdateCompetence.xaml.cs">
       <DependentUpon>UpdateCompetence.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Update_Badge.xaml.cs">
+      <DependentUpon>Update_Badge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Badge_Trad.xaml.cs">
+      <DependentUpon>Update_Badge_Trad.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Update_Categories_Trad.xaml.cs">
       <DependentUpon>Update_Categories_Trad.xaml</DependentUpon>
     </Compile>
@@ -224,6 +230,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UpdateCompetence.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Update_Badge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Update_Badge_Trad.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -40,5 +40,10 @@ namespace MarcassinLight
             listBadges = Appel_List.GetBadges();
             list.ItemsSource = listBadges;
         }
+
+        private void list_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate((new Update_Badge(((Badge_BO)list.SelectedItem))));
+        }
     }
 }
