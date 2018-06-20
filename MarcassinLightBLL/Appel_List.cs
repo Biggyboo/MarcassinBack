@@ -48,6 +48,7 @@ namespace MarcassinLightBLL
             return listCompBOArc;
 
         }
+
         public static Dictionary<string,string> GetTradCompetence(Competence_BO compBO)
         {
             Dictionary<string,string> listTrad = LangueCompetence_DAL.GetTrad(compBO);

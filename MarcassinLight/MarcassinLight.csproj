@@ -84,13 +84,15 @@
     </Compile>
     <Compile Include="CompetencesActives.xaml.cs">
       <DependentUpon>CompetencesActives.xaml</DependentUpon>
-
     </Compile>
     <Compile Include="Competence_trad.xaml.cs">
       <DependentUpon>Competence_trad.xaml</DependentUpon>
     </Compile>
     <Compile Include="Competence_trad_list.xaml.cs">
       <DependentUpon>Competence_trad_list.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CompetencesActives.xaml.cs">
+      <DependentUpon>CompetencesActives.xaml</DependentUpon>
     </Compile>
     <Compile Include="Langues.xaml.cs">
       <DependentUpon>Langues.xaml</DependentUpon>
