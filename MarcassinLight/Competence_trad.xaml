@@ -20,7 +20,7 @@
             <RowDefinition Height="0.25*"/>
         </Grid.RowDefinitions>
         <Label Grid.Column="1" Grid.Row="0" Content="Liste des compétences" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="#FF1F7C31"/>
-        <Label Grid.Column="1" Grid.Row="1" Content="Double click pour voir les traductions" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#FF1F7C31" FontSize="24"/>
+        <Label Grid.Column="1" Grid.Row="1" Content="Double-clique pour voir les traductions" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#FF1F7C31" FontSize="24"/>
 
         <StackPanel Grid.Column="1"  Grid.Row="2">
             <ListView MouseDoubleClick="list_MouseDoubleClick" SelectedItem="{Binding Select}" x:Name="list" Width="800" Height="450" HorizontalAlignment="Center">
