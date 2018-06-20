@@ -27,8 +27,14 @@ namespace MarcassinLight
         {
             InitializeComponent();
             listCategories = Appel_List.GetCategories();
-            C2.ItemsSource = listCategories;
 
+            var catMere = new Categorie_BO
+            {
+                Intitule = "Aucune catégorie mère"
+            };
+
+            listCategories.Add(catMere);
+            C2.ItemsSource = listCategories;
         }
 
         private void Creation_Click(object sender, RoutedEventArgs e)

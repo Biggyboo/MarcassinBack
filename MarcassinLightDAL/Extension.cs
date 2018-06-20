@@ -66,7 +66,7 @@ namespace MarcassinLightDAL
                                where c.id_Categorie == cat.id_Categorie_Mere
                                select c.Intitule;
 
-                    var catme = "Aucune";
+                    var catme = "Aucune catégorie mère";
                     if (cate != null)
                     {
                         catme = cate.FirstOrDefault();

@@ -21,7 +21,7 @@
         </Grid.RowDefinitions>
         <Label Grid.Column="1" Grid.Row="0" Content="Liste des categories" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="#FF1F7C31"/>
         <StackPanel Grid.Column="1"  Grid.Row="1">
-            <ListView x:Name="list" Width="800" Height="450" HorizontalAlignment="Center">
+            <ListView x:Name="list" Width="800" Height="450" HorizontalAlignment="Center" MouseDoubleClick="list_MouseDoubleClick">
                 <ListView.View>
 
                     <GridView AllowsColumnReorder="true"

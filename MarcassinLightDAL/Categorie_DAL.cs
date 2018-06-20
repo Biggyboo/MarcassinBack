@@ -58,5 +58,27 @@ namespace MarcassinLightDAL
             }
 
         }
+
+        public static void UpdCategorie(Categorie_BO catBO)
+        {
+
+            using (var db = new MarcassinEntities())
+            {
+                var catMere = from ca in db.Categorie
+                              where ca.Intitule == catBO.Categorie_mere
+                              select ca.id_Categorie;
+                int? id_Cat_Mere = catMere.FirstOrDefault();
+                if (catMere.FirstOrDefault() == 0)
+                {
+                    id_Cat_Mere = null;
+                }
+
+                Categorie cat = db.Categorie.Find(catBO.Id_Categorie);
+                cat.Intitule = catBO.Intitule;
+                cat.id_Categorie_Mere = id_Cat_Mere;
+                db.SaveChanges();
+
+            }
+        }
     }
 }
