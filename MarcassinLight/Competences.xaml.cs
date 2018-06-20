@@ -32,12 +32,14 @@ namespace MarcassinLight
 
         private void Retour_Click(object sender, RoutedEventArgs e)
         {
+
             NavigationService.Navigate(new CreateCompetence());
         }
 
         private void list_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
                 NavigationService.Navigate((new UpdateCompetence(((Competence_BO)list.SelectedItem))));
+
         }
     }
 }

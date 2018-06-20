@@ -48,6 +48,7 @@ namespace MarcassinLightBLL
             return listCompBOArc;
 
         }
+
         public static Dictionary<string,string> GetTradCompetence(Competence_BO compBO)
         {
             Dictionary<string,string> listTrad = LangueCompetence_DAL.GetTrad(compBO);
@@ -55,6 +56,7 @@ namespace MarcassinLightBLL
             return listTrad;
 
         }
+
 
 
         public static List<Categorie_BO> GetCategories()
@@ -81,6 +83,7 @@ namespace MarcassinLightBLL
 
         }
 
+
         public static List<LangueCategorie_BO> GetLanguesCategoriesByIdCat(Categorie_BO categorie)
         {
             List<LangueCategorie_BO> listLangCat = LangueCategorie_DAL.GetLangueCategoriesByIdCategorie(categorie);
@@ -92,5 +95,6 @@ namespace MarcassinLightBLL
             List<Langue_Badge_BO> listLangBadBO = Langue_Badge_DAL.GetTraductionByBadge(bad);
             return listLangBadBO;
         }
+
     }
 }

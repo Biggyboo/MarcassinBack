@@ -64,6 +64,7 @@
     <Compile Include="Badges.xaml.cs">
       <DependentUpon>Badges.xaml</DependentUpon>
     </Compile>
+
     <Compile Include="Categories_Trad_List.xaml.cs">
       <DependentUpon>Categories_Trad_List.xaml</DependentUpon>
     </Compile>
@@ -88,6 +89,11 @@
     <Compile Include="Competence_trad_list.xaml.cs">
       <DependentUpon>Competence_trad_list.xaml</DependentUpon>
     </Compile>
+
+    <Compile Include="CompetencesActives.xaml.cs">
+      <DependentUpon>CompetencesActives.xaml</DependentUpon>
+    </Compile>
+>>>>>>> d444b1bd2866e6078f7ff96e204bec76a272c433
     <Compile Include="Langues.xaml.cs">
       <DependentUpon>Langues.xaml</DependentUpon>
     </Compile>
@@ -130,6 +136,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+
     <Page Include="Competence_trad_ajout.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -138,10 +145,13 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+
+
     <Page Include="CompetencesActives.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+
     <Page Include="Competence_trad.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -150,6 +160,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+
     <Page Include="CreateCompetence.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
