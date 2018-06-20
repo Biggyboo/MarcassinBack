@@ -1,4 +1,4 @@
-﻿<Page x:Class="MarcassinLight.Competences"
+﻿<Page x:Class="MarcassinLight.Competence_trad"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,8 +6,7 @@
       xmlns:local="clr-namespace:MarcassinLight"
       mc:Ignorable="d" 
       d:DesignHeight="700" d:DesignWidth="1200"
-      Title="Competences">
-
+      Title="Competence_trad">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.25*"/>
@@ -16,12 +15,15 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.25*"/>
+            <RowDefinition Height="0.15*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="0.25*"/>
         </Grid.RowDefinitions>
-        <Label Grid.Column="1" Grid.Row="0" Content="Liste des compétences archivées" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="#FF1F7C31"/>
-        <StackPanel Grid.Column="1"  Grid.Row="1">
-            <ListView SelectedItem="{Binding Select}" x:Name="list" Width="800" Height="450" HorizontalAlignment="Center">
+        <Label Grid.Column="1" Grid.Row="0" Content="Liste des compétences" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="#FF1F7C31"/>
+        <Label Grid.Column="1" Grid.Row="1" Content="Double click pour voir les traductions" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#FF1F7C31" FontSize="24"/>
+
+        <StackPanel Grid.Column="1"  Grid.Row="2">
+            <ListView MouseDoubleClick="list_MouseDoubleClick" SelectedItem="{Binding Select}" x:Name="list" Width="800" Height="450" HorizontalAlignment="Center">
                 <ListView.View>
 
                     <GridView AllowsColumnReorder="true"
@@ -35,6 +37,5 @@
                 </ListView.View>
             </ListView>
         </StackPanel>
-        <Button x:Name="Retour" Content="Retour" Click="Retour_Click" Grid.Column="1" Grid.Row="2" Height="35" Width="100" FontSize="18" Background="#FF1F7C31" BorderBrush="#ecf0f1" Foreground="White" Style="{StaticResource MyButton}"/>
     </Grid>
 </Page>

@@ -8,6 +8,7 @@
       d:DesignHeight="700" d:DesignWidth="1200"
       Title="Pupitre">
 
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.1*"/>

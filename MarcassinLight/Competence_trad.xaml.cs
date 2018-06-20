@@ -12,33 +12,26 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using MarcassinLightBLL;
 using MarcassinLightBO;
+using MarcassinLightBLL;
 
 namespace MarcassinLight
 {
     /// <summary>
-    /// Logique d'interaction pour Competences.xaml
+    /// Logique d'interaction pour Competence_trad.xaml
     /// </summary>
-    public partial class Competences : Page
+    public partial class Competence_trad : Page
     {
         public List<Competence_BO> listCompetences;
-        public Competences()
+        public Competence_trad()
         {
             InitializeComponent();
-            listCompetences = Appel_List.GetCompetencesArchives();
+            listCompetences = Appel_List.GetCompetences();
             list.ItemsSource = listCompetences;
         }
-
-        private void Retour_Click(object sender, RoutedEventArgs e)
-        {
-
-            NavigationService.Navigate(new CreateCompetence());
-        }
-
         private void list_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-                NavigationService.Navigate((new UpdateCompetence(((Competence_BO)list.SelectedItem))));
+            NavigationService.Navigate((new Competence_trad_list(((Competence_BO)list.SelectedItem))));
 
         }
     }

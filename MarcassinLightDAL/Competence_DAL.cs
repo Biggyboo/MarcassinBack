@@ -61,22 +61,24 @@ namespace MarcassinLightDAL
                 comp.id_categorie = cat.FirstOrDefault();
                 db.SaveChanges();
 
-                //if (compBO.Competence_mere != null)
-                //{
-                //    var comref = from lc in db.Langue_Competence
-                //                 where lc.Traduction == compBO.Competence_mere
-                //                 select lc.id_Competence;
+                if (compBO.Competence_mere != "")
+                {
+                    var comref = from lc in db.Langue_Competence
+                                 where lc.Traduction == compBO.Competence_mere
+                                 select lc.id_Competence;
 
-                //    comp.id_Competence_ref = comref.FirstOrDefault();
-                //    comp.est_actif = false;
-                //}
-                //db.SaveChanges();
+                    comp.id_Competence_ref = comref.FirstOrDefault();
+                    comp.est_actif = false;
+                }
+                db.SaveChanges();
 
-                Langue_Competence langcomp = db.Langue_Competence.Where(l=>l.id_Competence==compBO.Id_Competence).Where(l=>l.id_Langue==1).FirstOrDefault();
+                Langue_Competence langcomp = db.Langue_Competence.Where(l => l.id_Competence == compBO.Id_Competence).Where(l => l.id_Langue == 1).FirstOrDefault();
                 langcomp.Traduction = compBO.Competence;
                 db.SaveChanges();
 
             }
         }
+
+
     }
 }
