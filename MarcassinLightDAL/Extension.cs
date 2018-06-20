@@ -164,7 +164,8 @@ namespace MarcassinLightDAL
                     var bo = new Langue_Badge_BO
                     {
                         Traduction = lanbad.Traduction,
-                        Langue = lanbad.Langue.Langue_intitule
+                        Langue = lanbad.Langue.Langue_intitule,
+                        Id_Langue = lanbad.id_Langue
                     };
                     listLangueBadgeBO.Add(bo);
                 }

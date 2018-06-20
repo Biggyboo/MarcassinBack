@@ -7,7 +7,7 @@ using MarcassinLightBO;
 
 namespace MarcassinLightDAL
 {
-    public class Badge_Dal
+    public class Badge_DAL
     {
         public static List<Badge_BO> GetBadge()
         {
@@ -27,6 +27,20 @@ namespace MarcassinLightDAL
                 {
                     nom=badgBO.Intitule
                 });
+                db.SaveChanges();
+            }
+        }
+
+        public static void UpdBadge(Badge_BO badBO)
+        {
+
+            using (var db = new MarcassinEntities())
+            {
+                Badge badg = db.Badge.Where(b => b.id_Badge == badBO.Id_Badge).FirstOrDefault();
+                badg.nom = badBO.Intitule;
+                db.SaveChanges();
+                Langue_Badge lanbad = db.Langue_Badge.Where(lb => lb.id_Badge == badBO.Id_Badge)
+                    .Where(lb => lb.Traduction == badBO.Intitule).Where(lb => lb.id_Langue == 1).FirstOrDefault();
                 db.SaveChanges();
             }
         }

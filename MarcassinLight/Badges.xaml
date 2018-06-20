@@ -22,12 +22,12 @@
         </Grid.RowDefinitions>
         <Label Grid.Column="1" Grid.Row="0" Content="Liste des badges" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="#FF1F7C31"/>
         <StackPanel Grid.Column="1"  Grid.Row="1" Grid.ColumnSpan="2">
-            <ListView x:Name="list" Width="502" Height="450" HorizontalAlignment="Center">
+            <ListView MouseDoubleClick="list_MouseDoubleClick" SelectedItem="{Binding Select}" x:Name="list" Width="502" Height="450" HorizontalAlignment="Center">
                 <ListView.View>
 
                     <GridView AllowsColumnReorder="true"
                      ColumnHeaderToolTip="Competence Information">
-                        <GridViewColumn Header="IdLangue" DisplayMemberBinding="{Binding Id_Badge}" Width="100"/>
+                        <GridViewColumn Header="IdBadge" DisplayMemberBinding="{Binding Id_Badge}" Width="100"/>
                         <GridViewColumn Header="Intitulé" DisplayMemberBinding="{Binding Intitule}" Width="395"/>
 
                     </GridView>

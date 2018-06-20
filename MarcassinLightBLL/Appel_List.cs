@@ -76,7 +76,7 @@ namespace MarcassinLightBLL
 
         public static List<Badge_BO> GetBadges()
         {
-            List<Badge_BO> listBadgBO = Badge_Dal.GetBadge();
+            List<Badge_BO> listBadgBO = Badge_DAL.GetBadge();
 
             return listBadgBO;
 

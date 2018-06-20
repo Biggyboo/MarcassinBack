@@ -20,7 +20,7 @@ namespace MarcassinLightBLL
         }
         public static void CreateBadge(Badge_BO badgBO)
         {
-            Badge_Dal.AddBadge(badgBO);
+            Badge_DAL.AddBadge(badgBO);
         }
         public static void CreateCategorie(Categorie_BO catBO)
         {

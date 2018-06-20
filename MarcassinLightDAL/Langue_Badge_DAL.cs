@@ -42,5 +42,18 @@ namespace MarcassinLightDAL
             }
             return bla;
         }
+        public static void UpdLangueBadge(Langue_Badge_BO lanBad)
+        {
+            using (var db = new MarcassinEntities())
+            {
+                int id_langue = db.Langue.Where(l => l.Langue_intitule == lanBad.Langue).Select(l => l.id_Langue).FirstOrDefault(); 
+                Langue_Badge laBa = db.Langue_Badge.Where(lb =>
+                lb.id_Langue == id_langue).Where(lb => lb.id_Badge == lanBad.Badge)
+                .FirstOrDefault();
+
+                laBa.Traduction = lanBad.Traduction;
+                db.SaveChanges();
+            }
+        }
     }
 }
