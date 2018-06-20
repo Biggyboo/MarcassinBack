@@ -35,6 +35,5 @@
                 </ListView.View>
             </ListView>
         </StackPanel>
-        <Button x:Name="Retour" Content="Retour" Click="Retour_Click" Grid.Column="1" Grid.Row="2" Height="35" Width="100" FontSize="18" Background="#FF1F7C31" BorderBrush="#ecf0f1" Foreground="White" Style="{StaticResource MyButton}"/>
     </Grid>
 </Page>
