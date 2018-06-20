@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MarcassinLight"
         mc:Ignorable="d"
-        Title="MainWindow" Height="700" Width="1200">
+        Title="My Admin Marcassin" Height="700" Width="1200">
     <StackPanel>
         <Frame x:Name="Frame" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
         <Button x:Name="Pupitre" Click="Pupitre_click" Grid.Column="1" Grid.Row="3" Content="Pupitre" FontSize="18" Foreground="White" Height="50" Background="#FF1F7C31" BorderBrush="#ecf0f1" BorderThickness="2" Style="{StaticResource MyButton}" Margin="20" HorizontalAlignment="Right" VerticalAlignment="Top"/>

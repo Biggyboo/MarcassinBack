@@ -30,14 +30,14 @@ namespace MarcassinLight
             list.ItemsSource = listCategories;
         }
 
-        private void Suppression_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void Creation_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new CreateCompetence());
+            NavigationService.Navigate(new CreateCategorie());
+        }
+
+        private void list_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate((new UpdateCategorie(((Categorie_BO)list.SelectedItem))));
         }
     }
 }

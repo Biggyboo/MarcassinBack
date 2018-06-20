@@ -18,9 +18,15 @@ namespace MarcassinLightBLL
         {
             LangueCategorie_DAL.UpdLangueCategorie(lanCat);
         }
+
         public static void UpdateTrad(string[] trad)
         {
             LangueCompetence_DAL.UpdTrad(trad);
+        }
+
+        public static void UpdateCategorie(Categorie_BO cat)
+        {
+            Categorie_DAL.UpdCategorie(cat);
         }
     }
 }
