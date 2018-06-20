@@ -20,7 +20,7 @@ namespace MarcassinLightBLL
         }
         public static void UpdateTrad(string[] trad)
         {
-            Competence_DAL.UpdTrad(trad);
+            LangueCompetence_DAL.UpdTrad(trad);
         }
     }
 }

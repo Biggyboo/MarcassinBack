@@ -25,6 +25,8 @@
         <ListBox x:Name="list1" MouseDoubleClick="list1_MouseDoubleClick" Grid.Column="1" HorizontalAlignment="Center" Margin="0" Grid.Row="2" VerticalAlignment="Center"/>
         <TextBox Name="trad" Grid.Column="2" HorizontalAlignment="Center" Margin="0" Grid.Row="2" VerticalAlignment="Center"/>
         <Button x:Name="Update" Content="Modifier" Click="Update_Click" Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="3" Height="35" Width="100" FontSize="18" Background="#FF1F7C31" BorderBrush="#ecf0f1" Foreground="White" Style="{StaticResource MyButton}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button x:Name="Retour" Content="Retour" Click="Retour_Click" Grid.ColumnSpan="2" Grid.Row="3" Height="35" Width="100" FontSize="18" Background="#FF1F7C31" BorderBrush="#ecf0f1" Foreground="White" Style="{StaticResource MyButton}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button x:Name="Ajouter" Content="Ajouter" Click="Ajouter_Click" Grid.ColumnSpan="2" Grid.Row="3" Height="35" Width="100" FontSize="18" Background="#FF1F7C31" BorderBrush="#ecf0f1" Foreground="White" Style="{StaticResource MyButton}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2"/>
 
     </Grid>
 </Page>

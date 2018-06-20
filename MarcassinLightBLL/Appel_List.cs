@@ -50,7 +50,7 @@ namespace MarcassinLightBLL
         }
         public static Dictionary<string,string> GetTradCompetence(Competence_BO compBO)
         {
-            Dictionary<string,string> listTrad = Competence_DAL.GetTrad(compBO);
+            Dictionary<string,string> listTrad = LangueCompetence_DAL.GetTrad(compBO);
 
             return listTrad;
 
